@@ -1,0 +1,128 @@
+  @charset "utf-8";
+  @font-face {
+    font-family:fonts1 ;
+    src: url(fonts/Butterscotch.ttf);
+  }
+
+body{
+    font-size: 1.3em;
+    font-family: fonts1;
+    background: linear-gradient(72deg, #d1bbaf 1%, #af24b1 99%);
+ }
+
+.main-header{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
+.main-header h1{
+    background-color: white;
+    font-size: 3em;
+    margin-bottom: 2em;
+    line-height: 1,2em;
+    box-shadow: 20px 20px 20px rgb(92, 35, 237);
+}
+
+.main-header h1 span{
+    color: purple;
+}
+
+.main-header p{
+    font-size: 2em;
+}
+p{
+    font-family: fonts1;
+    font-size: 25px;
+}
+
+.a{
+    color: #efeaf2;
+    text-emphasis: none;
+}
+
+.conteiner{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 1 2em;
+    
+    
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+    background-color: #6868e7;
+    margin-bottom: 2em;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 2em;
+}
+
+.card div{
+    padding: 2em;
+}
+
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    background-color:black;
+    color:white;
+    padding: 0.7em 1.8em;
+    margin-top: 2em;
+    cursor: default;
+}
+
+ .btn:hover{
+    text-decoration: none;
+    background-color:rgb(234, 14, 14);
+    box-shadow: 10px 10px 10px blue;
+} 
+
+.galeria{
+    display: flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 100%;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.galeria div:hover{
+    align-items: top;
+    flex: 3;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.logo img{
+    position: absolute;
+    max-width: 150px;
+    top: 0px;
+}
+
